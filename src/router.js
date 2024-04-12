@@ -9,6 +9,7 @@ import Employee from "./views/Employee.vue";
 import Employer from "./views/Employer.vue";
 import Legal from "./views/Legal.vue";
 import Laws from "./views/Laws.vue";
+import ContactUs from "./views/Contact.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -17,6 +18,7 @@ const routes = [
   { path: "/employer", component: Employer },
   { path: "/laws", component: Legal },
   { path: "/legal", component: Laws },
+  { path: "/contactus", component: ContactUs },
 ];
 
 const router = createRouter({

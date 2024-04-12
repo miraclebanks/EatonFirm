@@ -10,18 +10,17 @@
       <div class="header-content">
         <div class="header-content__text">
           <h1>Bereavement Companion</h1>
-          <h3>
+          <h2>
             Your Comprehensive Resource for Bereavement Leave and Legal
             Processes
-          </h3>
+          </h2>
           <!-- <h3>
             Supporting Employees, Employers, and Grieving Individuals with
             Information and Resources that offers hope & relief.
           </h3> -->
         </div>
         <div class="header-content__buttons">
-          <button>Get Help</button>
-          <button>Contact</button>
+          <button>Contact Us</button>
         </div>
       </div>
     </div>
@@ -76,6 +75,7 @@
           padding: 10px 20px;
           cursor: pointer;
           font-size: 16px;
+          font-weight: bold;
           border-radius: 5px;
           transition: background-color 0.3s;
           margin: 16px;

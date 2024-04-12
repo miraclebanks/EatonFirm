@@ -9,7 +9,7 @@
     <div class="cta-container">
       <div class="cta-content">
         <div class="cta-content__image">
-          <img src="@/assets/grief.jpg" alt="" />
+          <img src="@/assets/grief.jpeg" alt="" />
         </div>
         <div class="cta-content__text">
           <h2>
@@ -53,6 +53,12 @@
       &__text {
         flex: 1;
         padding: 40px;
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 28px;
+        }
       }
     }
   }

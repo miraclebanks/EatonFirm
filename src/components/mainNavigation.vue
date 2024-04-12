@@ -24,6 +24,9 @@
     <div class="links">
       <router-link to="/laws">State Laws</router-link>
     </div>
+    <div class="links">
+      <router-link to="/contactus">Contact Us</router-link>
+    </div>
   </div>
 </template>
 

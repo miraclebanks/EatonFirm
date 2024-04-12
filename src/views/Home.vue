@@ -15,5 +15,3 @@
   <MainHeader />
   <MainCta />
 </template>
-
-<style></style>
