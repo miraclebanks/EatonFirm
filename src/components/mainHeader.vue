@@ -58,7 +58,6 @@
       align-items: center;
       width: 100%;
       height: 100%;
-      padding: 96px;
       &__text {
         display: flex;
         text-align: center;

@@ -25,7 +25,6 @@
       <router-link to="/laws">State Laws</router-link>
     </div>
   </div>
-  <router-view></router-view>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -38,6 +37,7 @@
     height: 52px;
     padding-top: 50px;
     margin: 24px 0px;
+    z-index: 1050;
   }
   .links {
     margin: 0 16px;

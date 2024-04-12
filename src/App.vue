@@ -1,17 +1,13 @@
 <script>
-  import Navigation from "./components/navigation.vue";
+  import MainNavigation from "./components/mainNavigation.vue";
 
   export default {
     name: "App",
-    components: {
-      Navigation,
-    },
+    components: { MainNavigation },
   };
 </script>
 
-<template>
-  <Navigation />
-</template>
+<template><MainNavigation /><RouterView /></template>
 
 <style>
   #app {
