@@ -1,16 +1,16 @@
 <script>
-  import Navigation from "./components/navigation.vue";
+  import Map from "../components/laws/map.vue";
 
   export default {
-    name: "App",
+    name: "LegalPage",
     components: {
-      Navigation,
+      Map,
     },
   };
 </script>
 
 <template>
-  <Navigation />
+  <Map />
 </template>
 
 <style>

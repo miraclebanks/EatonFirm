@@ -1,16 +1,19 @@
 <script>
-  import Navigation from "./components/navigation.vue";
+  import MainHeader from "../components/mainHeader.vue";
+  import MainCta from "../components/mainCta.vue";
 
   export default {
-    name: "App",
+    name: "HomePage",
     components: {
-      Navigation,
+      MainHeader,
+      MainCta,
     },
   };
 </script>
 
 <template>
-  <Navigation />
+  <MainHeader />
+  <MainCta />
 </template>
 
 <style>
