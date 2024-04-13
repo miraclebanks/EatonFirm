@@ -20,7 +20,7 @@
           </h3> -->
         </div>
         <div class="header-content__buttons">
-          <button>Contact Us</button>
+          <router-link to="/contactus" class="button">Contact Us</router-link>
         </div>
       </div>
     </div>
@@ -68,7 +68,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        button {
+        .button {
           background-color: black;
           color: white;
           border: none;
