@@ -13,17 +13,27 @@
     },
     methods: {
       submitForm() {
-        // Here you can handle form submission
-        console.log("Form submitted:", this.formData);
-        // You can also send the form data to a backend API for processing
-        // For example, you can use Axios to make an HTTP POST request
-        // axios.post('/api/contact', this.formData)
-        //   .then(response => {
-        //     console.log('Server response:', response);
-        //   })
-        //   .catch(error => {
-        //     console.error('Error:', error);
-        //   });
+        fetch("http://localhost:3000/contactus", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(this.formData),
+        })
+          .then((response) => {
+            if (response.ok) {
+              console.log("Email sent successfully");
+              // Optionally, reset the form
+              this.formData.name = "";
+              this.formData.email = "";
+              this.formData.message = "";
+            } else {
+              console.error("Failed to send email");
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error, this.formData);
+          });
       },
     },
   };
