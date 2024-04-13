@@ -1,14 +1,16 @@
 <script>
-  import Map from "../components/laws/map.vue";
+  import DeathAspects from "../components/legal/death-aspects.vue";
 
   export default {
     name: "LegalPage",
     components: {
-      Map,
+      DeathAspects,
     },
   };
 </script>
 
 <template>
-  <Map />
+  <DeathAspects />
 </template>
+
+>

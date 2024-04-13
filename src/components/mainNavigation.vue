@@ -44,7 +44,7 @@
     font-size: 22px;
   }
   .links {
-    margin: 0 16px;
+    margin: 0 96px;
     text-decoration: none;
     &:hover {
       cursor: pointer;

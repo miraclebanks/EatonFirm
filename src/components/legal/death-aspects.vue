@@ -5,10 +5,6 @@
       return {
         isOpen1: false,
         isOpen2: false,
-        isOpen3: false,
-        isOpen4: false,
-        isOpen5: false,
-        isOpen6: false,
       };
     },
     methods: {
@@ -17,18 +13,6 @@
       },
       toggleDropdown2() {
         this.isOpen2 = !this.isOpen2;
-      },
-      toggleDropdown3() {
-        this.isOpen3 = !this.isOpen3;
-      },
-      toggleDropdown4() {
-        this.isOpen4 = !this.isOpen4;
-      },
-      toggleDropdown5() {
-        this.isOpen5 = !this.isOpen5;
-      },
-      toggleDropdown6() {
-        this.isOpen6 = !this.isOpen6;
       },
     },
   };
@@ -40,18 +24,17 @@
     Administrations and Probates; Included in this website is general
     information for what the procedures are in California.
   </div>
-  <div class="trust-image"><img src="../../assets/trust.png" /></div>
   <div class="about-company-container">
     <div class="column about-company-container_text">
       <div>
         <button @click="toggleDropdown1" class="dropbtn">
           <h1>With an established Trust</h1>
         </button>
-        <ul v-if="!isOpen1" class="about-company-container_text-blurb">
+        <ul v-if="isOpen1" class="about-company-container_text-blurb">
           <li>
             <h3>What is a Trust administration, and why it's important.</h3>
             A Trust administration is when the Trustee takes over a trust. This
-            is done to ensure that the trust wishes are followed, along with
+            is done to ensure that the trust's wishes are followed, along with
             taking care of the legal paperwork that needs to be filed with
             specific agencies, moving property, consolidating bank accounts, and
             doing an accounting that allows for all the beneficiaries to
@@ -169,10 +152,10 @@
     </div>
     <div class="column about-company-container_text">
       <div>
-        <button @click="toggleDropdown4" class="dropbtn">
+        <button @click="toggleDropdown2" class="dropbtn">
           <h1>Probate</h1>
         </button>
-        <ul v-if="!isOpen4" class="about-company-container_text-blurb">
+        <ul v-if="isOpen2" class="about-company-container_text-blurb">
           <li>
             Probate is the legal process that must be followed in order to
             transfer and distribute financial and physical property after the
@@ -249,6 +232,7 @@
       </div>
     </div>
   </div>
+  <div class="trust-image"><img src="../../assets/trust.png" /></div>
 </template>
 
 <style scoped lang="scss">
@@ -256,22 +240,20 @@
     font-size: 35px;
     font-weight: bolder;
     margin-top: 96px;
-    margin-bottom: 24px;
-    padding: 100px;
+    padding: 50px 96px;
     text-shadow: rgb(164, 164, 235) 1px 0 10px;
   }
   .trust-image {
     padding: 0px 96px;
     img {
-      width: 75%;
-      height: 45vh;
+      width: 100%;
       border: 3px solid black;
       border-radius: 8px;
     }
   }
   .column {
     display: flex;
-    padding: 40px;
+    padding: 40px 96px;
     flex: 1;
   }
   .dropdown-content {
@@ -285,15 +267,12 @@
   .about-company-container {
     display: flex;
     flex-direction: row;
-
-    margin-top: 96px;
     text-align: justify;
     position: relative;
 
     &_text {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
       font-size: 18px;
       font-weight: bolder;
       &-blurb {

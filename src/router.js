@@ -16,8 +16,8 @@ const routes = [
   { path: "/about", component: AboutUs },
   { path: "/employee", component: Employee },
   { path: "/employer", component: Employer },
-  { path: "/laws", component: Legal },
-  { path: "/legal", component: Laws },
+  { path: "/legal", component: Legal },
+  { path: "/laws", component: Laws },
   { path: "/contactus", component: ContactUs },
 ];
 
