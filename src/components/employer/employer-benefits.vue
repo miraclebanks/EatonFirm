@@ -62,15 +62,15 @@
           <li>
             Loss and Grief in the Workplace focused on workplace culture and
             open communication. The study was developed by doing a literature
-            review. The researchers served multiple industries in Australia and
-            found that workplace culture was a core reason many bereaved were
-            uncomfortable openly discussing their grief and what extra support
-            they needed during the initial return to work after loss. This study
-            highlights the importance of a positive workplace environment before
-            and after an employee's loss. The researchers identified an
-            overwhelming amount of employees who feel uncomfortable expressing
-            personal issues at work, and how this causes reduced productivity
-            and increased mental stress.
+            review. The researchers surveyed multiple industries in Australia
+            and found that workplace culture was a core reason many bereaved
+            were uncomfortable openly discussing their grief and what extra
+            support they needed during the initial return to work after loss.
+            This study highlights the importance of a positive workplace
+            environment before and after an employee's loss. The researchers
+            identified an overwhelming amount of employees who feel
+            uncomfortable expressing personal issues at work, and how this
+            causes reduced productivity and increased mental stress.
           </li>
         </ul>
       </div>

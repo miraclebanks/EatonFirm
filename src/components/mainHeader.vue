@@ -95,7 +95,7 @@
       }
     }
     .header {
-      height: 40vh;
+      height: 60vh;
       &-content {
         .button {
           font-size: 20px;
@@ -119,7 +119,7 @@
       }
     }
     .header {
-      height: 30vh;
+      height: 40vh;
       &-content {
         .button {
           font-size: 16px;

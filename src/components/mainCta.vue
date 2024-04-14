@@ -22,7 +22,7 @@
             employers and all those grieving. Also included is information about
             laws and legal processes that follow a death. A continuous hope is
             that this website allows for some relief during this very difficult
-            time
+            time.
           </p>
         </div>
       </div>
