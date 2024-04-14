@@ -37,14 +37,18 @@
       </button>
       <div v-if="showMore" class="about-blurb-container_text-blurb">
         At 23 years old my boyfriend's step father died and the world’s empathy
-        and compassion I previously felt was gone. I was often told, “yes death is awful but you're an adult now and need to keep going”. That “I need to stop sitting in my grief”. “To hide those feelings and continue on with my life to get back to work within a day and just keep going”. This moment and those words changed me. I started to ask
-        clients at work, what aspects of grief they think is the hardest? The
-        answers ranged, but the common takeaway was that they left as if their
-        grief was a burden to those around them. That they needed to deal with
-        their grief alone. This stark contrast to how society responded to the
-        grief of a 15 year old compared to an adult made me question why the age
-        at which you grieve determines the level of community and society care?
-        That question and those feelings have led me to create this website.
+        and compassion I previously felt was gone. I was often told, “yes death
+        is awful but you're an adult now and need to keep going”. That “I need
+        to stop sitting in my grief”. “To hide those feelings and continue on
+        with my life to get back to work within a day and just keep going”. This
+        moment and those words changed me. I started to ask clients at work,
+        what aspects of grief they think is the hardest? The answers ranged, but
+        the common takeaway was that they left as if their grief was a burden to
+        those around them. That they needed to deal with their grief alone. This
+        stark contrast to how society responded to the grief of a 15 year old
+        compared to an adult made me question why the age at which you grieve
+        determines the level of community and society care? That question and
+        those feelings have led me to create this website.
       </div>
       <button
         @click="toggleShowMore"
@@ -66,13 +70,13 @@
     justify-content: center;
     padding: 0px 96px;
     &_text {
+      display: flex;
+      flex-direction: column;
       padding: 0px 96px;
       font-weight: bolder;
       &-blurb {
         display: flex;
-        text-align: justify;
         font-size: 18px;
-        padding: 0px 96px;
       }
     }
     &-buttons {
@@ -84,8 +88,20 @@
       font-size: 16px;
       border-radius: 5px;
       transition: background-color 0.3s;
-      margin: 16px;
       font-weight: bold;
+      &:hover {
+        transform: translateY(-3px); /* Move button up slightly on hover */
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .about-blurb-container {
+      padding: 0px 24px;
+      &_text {
+        padding: 0px;
+      }
     }
   }
 </style>
