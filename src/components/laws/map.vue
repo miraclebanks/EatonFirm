@@ -361,17 +361,6 @@
   }
 
   @media screen and (max-width: 768px) {
-    .map-image {
-      width: 100%;
-      height: auto;
-    }
-    .tooltip {
-      top: 50%;
-      left: 50%;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
     .map {
       button {
         display: none;
