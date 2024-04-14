@@ -38,26 +38,26 @@
     justify-content: center;
     text-align: center;
     height: 52px;
-    padding-top: 50px;
-    margin: 24px 0px;
+    padding: 24px 0;
     z-index: 1050;
     font-size: 22px;
-  }
-  .links {
-    margin: 0 96px;
-    text-decoration: none;
-    &:hover {
-      cursor: pointer;
-    }
-    a {
-      color: black;
+
+    .links {
+      margin: 0 96px;
       text-decoration: none;
       &:hover {
-        color: rgb(72, 72, 78);
-        transition: all 0.5s ease-out;
-        transform: translate(32px, 18px);
-        font-size: 28px;
-        text-decoration: underline;
+        cursor: pointer;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+          color: rgb(72, 72, 78);
+          transition: all 0.5s ease-out;
+          transform: translate(32px, 18px);
+          font-size: 28px;
+          text-decoration: underline;
+        }
       }
     }
   }

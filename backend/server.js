@@ -8,7 +8,6 @@ const app = express();
 const port = 3000;
 
 app.use(cors());
-
 app.use(bodyParser.json());
 
 // Route handler for contact form submission
@@ -18,9 +17,12 @@ app.post("/contactus", (req, res) => {
   // Create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     service: "gmail",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASSWORD,
+      pass: process.env.EMAIL_PASS, // Change to EMAIL_PASS
     },
   });
 
@@ -29,16 +31,14 @@ app.post("/contactus", (req, res) => {
     from: `${email}`,
     to: process.env.EMAIL_USER,
     subject: "New Contact Form Submission",
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    text: `Name: ${name}\n\nMessage: ${message}`,
   };
 
   // Send mail with defined transport object
-  transporter.sendMail(mailOptions, (error, info) => {
+  transporter.sendMail(mailOptions, (error) => {
     if (error) {
-      console.error("Error:", error);
       res.status(500).send("Internal Server Error");
     } else {
-      console.log("Message sent:", info.response);
       res.status(200).send("Message Sent");
     }
   });

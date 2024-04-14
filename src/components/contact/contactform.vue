@@ -56,7 +56,7 @@
           <textarea
             id="message"
             v-model="formData.message"
-            rows="4"
+            rows="8"
             required
           ></textarea>
         </div>
@@ -66,15 +66,22 @@
   </div>
   <div></div>
 </template>
-<style scoped>
+<style lang="scss">
   /* Add component-specific styles here */
   .contact-container {
     display: flex;
-    align-items: center; /* Centers the content vertically */
+    align-items: center;
   }
 
   .form-container {
-    max-width: 400px;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    min-width: 500px;
+    border: 4px solid black;
+    border-radius: 10%;
+    padding: 40px 40px;
   }
 
   form {
