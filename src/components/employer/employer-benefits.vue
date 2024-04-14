@@ -179,7 +179,6 @@
   .employer-container {
     display: flex;
     flex-direction: row;
-
     margin-top: 96px;
     text-align: justify;
     position: relative;
@@ -239,16 +238,14 @@
       flex-direction: column;
       text-align: left;
       h1 {
-        font-size: 20px;
+        font-size: 1rem;
       }
       li {
-        font-size: 16px;
+        font-size: 0.8rem;
       }
       &_text {
-        flex-direction: row; /* Change from row to column */
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center; /* Center items vertically */
+        flex-direction: column;
+        justify-content: center;
       }
     }
   }
