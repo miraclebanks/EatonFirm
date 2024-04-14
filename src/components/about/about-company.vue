@@ -31,7 +31,7 @@
         information and tools to help their employees transition back to work
         after a loss. As well as a space to begin to understand the legal
         process that can occur after a death. Grief and loss are universal and
-        the culture and attitudes around it need to shift. This website is one
+        the culture and attitudes around it needs to shift. This website is one
         small piece to try and achieve that goal. As you go through your grief
         journey I hope this website gives you tools and resources needed to help
         make the transition to “your new normal” a little easier.
@@ -47,15 +47,23 @@
     align-items: center;
     justify-content: center;
     margin-top: 48px;
-    border: 1px solid grey;
+    padding: 0px 24px;
     &_image {
+      flex: 1;
       img {
-        max-height: 70vh;
+        width: 100%;
+        height: auto;
       }
     }
     &_text {
-      font-size: 18px;
+      flex: 1;
+      font-size: 1rem;
       font-weight: bolder;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .about-company-container {
+      flex-direction: column;
     }
   }
 </style>

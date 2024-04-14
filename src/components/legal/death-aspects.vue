@@ -219,10 +219,9 @@
                     Attorney Aaron Charles Gregg, “Most clients feel like they
                     are in fog, and the best thing we can do is be a steady
                     place they can come to with questions. Within the field more
-                    compassion is needed, we need to meet people where they are
-                    at and if that means it takes them a year to begin the
-                    process they should be allotted that time within the legal
-                    space.
+                    compassion is ed, we need to meet people where they are at
+                    and if that means it takes them a year to begin the process
+                    they should be allotted that time within the legal space.
                   </li>
                 </ul>
               </li>

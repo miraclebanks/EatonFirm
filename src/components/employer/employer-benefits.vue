@@ -96,23 +96,22 @@
           <li>
             Loss and Grief in the workplace. Overall this study highlights the
             importance of building an accepting and understanding workplace
-            prior to a loss. The culture of acceptance and understanding need to
-            be carried through, and built upon during someone’s grief in order
-            to ease the transition of returning to work in a way where both the
-            employee and employer are content. The study found that workplace
-            employee relationships are a critical component of the healing
-            journey, and that by facilitating a workplace culture that promotes
-            employee relationships your employees will have an overall better
-            experience and will help reduce loss in productivity. The study
-            indicates that the amount of time spent at work is large and
+            prior to a loss. The culture of acceptance and understanding needs
+            to be carried through, and built upon during someone’s grief in
+            order to ease the transition of returning to work in a way where
+            both the employee and employer are content. The study found that
+            workplace employee relationships are a critical component of the
+            healing journey, and that by facilitating a workplace culture that
+            promotes employee relationships your employees will have an overall
+            better experience and will help reduce loss in productivity. The
+            study indicates that the amount of time spent at work is large and
             therefore feeling safe enough to express personal struggles are a
             key component.
           </li>
           <li>
             Both studies found that there was a lack of comfortability in
             employees asking for additional support as well as the fact that
-            many employees are unaware of what resources are available to
-            them.<sup>3,4</sup>
+            many employees are unaware of what resources are available to them.
           </li>
         </ul>
       </div>
