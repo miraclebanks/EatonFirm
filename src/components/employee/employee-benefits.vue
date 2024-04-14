@@ -60,9 +60,13 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
+    position: relative;
     overflow: hidden;
     background-image: url("../../assets/lake-dock.jpg");
     background-size: cover;
+    h1 {
+      font-size: 1.3rem;
+    }
     &_text {
       display: flex;
       flex-direction: column;
@@ -70,9 +74,9 @@
       font-size: 18px;
       font-weight: bolder;
       &-blurb {
-        padding: 0px 40px 40px 40px;
+        padding: 0px 40px;
         li {
-          font-size: 24px;
+          font-size: 1.1rem;
           margin-bottom: 24px;
         }
       }
@@ -80,16 +84,30 @@
   }
   .text-container {
     background-color: rgba(48, 46, 46, 0.8);
-    padding: 20px;
-    width: 65%;
-    height: 900px;
+    padding: 40px;
+    width: 65vw;
+    height: fit-content;
     color: white;
+    position: absolute;
   }
 
   .cta {
     font-weight: bolder;
-    padding: 100px;
     color: white;
     text-shadow: rgb(52, 52, 196) 1px 0 15px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .about-company-container {
+      h1 {
+        font-size: 0.8rem;
+      }
+      &_text-blurb {
+        padding: 0px 10px;
+        li {
+          font-size: 0.6rem;
+        }
+      }
+    }
   }
 </style>
