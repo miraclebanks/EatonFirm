@@ -17,7 +17,7 @@
             Information and Resources that offers hope & relief
           </h2>
           <p>
-            BereavementCompanion.com is a one- stop shop for resources and
+            BereavementCompanion is a one- stop shop for resources and
             information surrounding bereavement leave, aimed to help employees,
             employers and all those grieving. Also included is information about
             laws and legal processes that follow a death. A continuous hope is
