@@ -262,4 +262,11 @@
     left: 100%;
     transform: translate(-50%, -50%) rotate(45deg) scaleX(0.5);
   }
+
+  @media screen and (max-width: 768px) {
+    .map-image {
+      width: 100%;
+      height: auto;
+    }
+  }
 </style>

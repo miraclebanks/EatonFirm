@@ -41,24 +41,28 @@
     margin-top: 96px;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     padding: 0px 96px;
     margin-bottom: 96px;
     &_image {
-      border: 8px solid black;
+      border: 4px solid black;
       flex: 1;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &:hover {
+        border-color: #6c5ce7; /* Change border color on hover */
+      }
     }
     &_text {
-      border: 8px solid black;
-      margin: 0px 16px;
-      font-size: 32px;
       font-weight: bolder;
+      margin: 0px 16px;
       flex: 1;
       &-blurb {
         display: flex;
-        text-align: justify;
         padding: 0px 48px;
+        font-size: 2.1rem;
       }
     }
     &-buttons {
@@ -87,6 +91,34 @@
       }
       &::after {
         content: none;
+      }
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .map-blurb-container {
+      margin: 48px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &_text {
+        border: 4px solid black;
+        margin: 16px 0px;
+        &:hover {
+          border-color: #6c5ce7; /* Change border color on hover */
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .map-blurb-container {
+      padding: 0px 24px;
+      &_text {
+        margin: 16px 0px;
+        &-blurb {
+          display: flex;
+          padding: 0px 8px;
+          font-size: 0.8rem;
+        }
       }
     }
   }
