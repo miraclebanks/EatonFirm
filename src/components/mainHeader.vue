@@ -14,10 +14,6 @@
             Your Comprehensive Resource for Bereavement Leave and Legal
             Processes
           </h2>
-          <!-- <h3>
-            Supporting Employees, Employers, and Grieving Individuals with
-            Information and Resources that offers hope & relief.
-          </h3> -->
         </div>
         <div class="header-content__buttons">
           <router-link to="/contactus" class="button">Contact Us</router-link>
@@ -79,6 +75,54 @@
           border-radius: 5px;
           transition: background-color 0.3s;
           margin: 16px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header-container {
+      margin-bottom: 0;
+      h1 {
+        font-size: 28px;
+        margin-top: 16px;
+        margin-bottom: 0px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 0px;
+        padding: 0 8px;
+      }
+    }
+    .header {
+      height: 40vh;
+      &-content {
+        .button {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .header-container {
+      margin-bottom: 0;
+      h1 {
+        font-size: 24px;
+        margin-top: 16px;
+        margin-bottom: 0px;
+      }
+      h2 {
+        font-size: 20px;
+        margin-bottom: 0px;
+        padding: 0 8px;
+      }
+    }
+    .header {
+      height: 30vh;
+      &-content {
+        .button {
+          font-size: 16px;
         }
       }
     }
