@@ -48,7 +48,7 @@
     justify-content: center;
     margin-top: 48px;
     height: fit-content;
-    padding: 0px 24px;
+    padding: 0px 96px;
     &_image {
       flex: 1;
       border-image-source: url("https://raw.githubusercontent.com/robole/artifice/main/framed-content/img/frame.png");
@@ -69,7 +69,7 @@
       overflow: auto;
 
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3), 0 0 6px 0 rgba(0, 0, 0, 0.18);
-      height: fit-content;
+      height: auto;
       img {
         width: 100%;
         min-height: 100%;
@@ -79,11 +79,19 @@
       flex: 1;
       font-size: 1rem;
       font-weight: bolder;
+      margin-left: 32px;
     }
   }
   @media screen and (max-width: 768px) {
     .about-company-container {
       flex-direction: column;
+      padding: 0px 24px;
+      &_text {
+        flex: 1;
+        font-size: 1rem;
+        font-weight: bolder;
+        margin-left: 0px;
+      }
     }
   }
 </style>

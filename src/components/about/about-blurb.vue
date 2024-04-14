@@ -88,6 +88,7 @@
       border-radius: 5px;
       transition: background-color 0.3s;
       font-weight: bold;
+      margin-top: 16px;
       &:hover {
         transform: translateY(-3px); /* Move button up slightly on hover */
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
