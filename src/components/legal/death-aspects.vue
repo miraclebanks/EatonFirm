@@ -24,13 +24,13 @@
     Administrations and Probates; Included in this website is general
     information for what the procedures are in California.
   </div>
-  <div class="about-company-container">
-    <div class="column about-company-container_text">
+  <div class="legal-container">
+    <div class="column legal-container_text">
       <div>
         <button @click="toggleDropdown1" class="dropbtn">
           <h1>With an established Trust</h1>
         </button>
-        <ul v-if="isOpen1" class="about-company-container_text-blurb">
+        <ul v-if="isOpen1" class="legal-container_text-blurb">
           <li>
             <h3>What is a Trust administration, and why it's important.</h3>
             A Trust administration is when the Trustee takes over a trust. This
@@ -150,12 +150,12 @@
         </ul>
       </div>
     </div>
-    <div class="column about-company-container_text">
+    <div class="column legal-container_text">
       <div>
         <button @click="toggleDropdown2" class="dropbtn">
           <h1>Probate</h1>
         </button>
-        <ul v-if="isOpen2" class="about-company-container_text-blurb">
+        <ul v-if="isOpen2" class="legal-container_text-blurb">
           <li>
             Probate is the legal process that must be followed in order to
             transfer and distribute financial and physical property after the
@@ -247,6 +247,7 @@
     padding: 0px 96px;
     img {
       width: 100%;
+      height: auto;
       border: 3px solid black;
       border-radius: 8px;
     }
@@ -264,7 +265,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
-  .about-company-container {
+  .legal-container {
     display: flex;
     flex-direction: row;
     text-align: justify;
@@ -309,6 +310,40 @@
     &:hover {
       cursor: pointer;
       background-position: right center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .cta {
+      font-size: 1.2rem;
+    }
+    .column {
+      display: flex;
+      padding: 20px 48px;
+      flex: 1;
+    }
+    .trust-image {
+      padding: 0px 40px;
+    }
+
+    .legal-container {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      position: relative;
+
+      &_text {
+        display: flex;
+        font-size: 1rem;
+        font-weight: bolder;
+        &-blurb {
+          padding: 0px 20px;
+          li {
+            font-size: 0.8rem;
+            margin-bottom: 8px;
+          }
+        }
+      }
     }
   }
 </style>
