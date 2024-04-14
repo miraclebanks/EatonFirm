@@ -122,4 +122,10 @@
       }
     }
   }
+
+  @media screen and (max-width: 1400px) {
+    .map-blurb-container {
+      margin: 8px 0px;
+    }
+  }
 </style>

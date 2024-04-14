@@ -46,7 +46,7 @@
           >WAC 357-31-250</a
         >, which creates a law that requires all employers and employees to
         receive 3 days of paid leave for bereavement leave
-
+        <br />
         <a
           href="https://www.lni.wa.gov/workers-rights/leave/holiday-vacation-bereavement-leave#:~:text=Washington%20State%20does%20not%20require,between%20an%20employer%20and%20employee."
           target="_"
@@ -106,6 +106,91 @@
         labor on January 3, 2024.
       </div>
     </button>
+    <div class="mobile-view">
+      <h3>State Laws</h3>
+      <div>
+        This
+        <a
+          href=" https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2023/04/Bereavement-Leave_AB-1949_FAQ_ENG.pdf"
+          target="_"
+          >California law</a
+        >
+        became effective January 1, 2023. The law dictates that a private
+        employer with more than 5 employees must give 3-5 days of unpaid leave
+        for bereavement leave if an employee has worked at said company for more
+        than 30 days.
+      </div>
+      <div>
+        <a
+          href=" https://www.portland.gov/bhr/documents/ofla-bereavement-leave-guidance/download"
+          target="_"
+          >Oregon’s bereavement law</a
+        >
+        has been effective since January 1, 2014. It dictates employers with 25
+        or more employees must allow qualifying employees to take 2 weeks of
+        leave for each family member that dies, this is not required to be paid.
+      </div>
+      <div>
+        Washington has
+        <a
+          href="https://apps.leg.wa.gov/wac/default.aspx?cite=357-31-250#:~:text=(1)%20If%20an%20employee's%20family,days%20of%20paid%20bereavement%20leave."
+          >WAC 357-31-250</a
+        >, which creates a law that requires all employers and employees to
+        receive 3 days of paid leave for bereavement leave.
+        <br />
+        <a
+          href="https://www.lni.wa.gov/workers-rights/leave/holiday-vacation-bereavement-leave#:~:text=Washington%20State%20does%20not%20require,between%20an%20employer%20and%20employee."
+          target="_"
+          >Washington law</a
+        >
+        is different compared to the four listed above. They do not require
+        bereavement leave except for an employee who lost a child under defined
+        circumstances.
+      </div>
+      <div>
+        <a href="https://labor.illinois.gov/faqs/flbafaqs.html" target="_"
+          >Illinois state</a
+        >
+        dictates that the Family Bereavement Leave Act (FBLA) requires eligible
+        employees to take 2 weeks (10 workdays) off of unpaid leave following
+        the death of a covered family member.
+      </div>
+      <div>
+        <a
+          href="https://dbm.maryland.gov/employees/pages/leave_home.aspx#:~:text=Death%20in%20the%20Family&text=An%20employee%20may%20elect%20to,for%20other%20designated%20family%20members"
+          target="_"
+          >Maryland law</a
+        >
+        dictates that an employee may take 3 days of bereavement leave instead
+        of using 3 of their sick days, however 1 sick day may be charged to sick
+        leave during this time.
+      </div>
+      <div>
+        <a
+          href="https://legislature.vermont.gov/bill/status/2024/H.66"
+          target="_"
+          >Vermont - House Bill 66</a
+        >
+        If passed in the Vermont Senate this would create an integrated
+        bereavement leave component in the Family and Medical Leave Act. It
+        would allow employees to take 2 weeks out of the 12 offered by FMLA for
+        bereavement leave. The bill is currently with the Economic Development,
+        Housing and General Affairs committee in the senate. It passed during a
+        Vermont House vote in March of 2023
+      </div>
+
+      <div>
+        <a
+          href="https://www.lni.wa.gov/workers-rights/leave/holiday-vacation-bereavement-leave#:~:text=Washington%20State%20does%20not%20require,between%20an%20employer%20and%20employee."
+          target="_"
+          >New York- Bill #A06605</a
+        >
+        This bill would amend workers compensation law for paid bereavement
+        leave starting in 2025. This bill was previously passed in the assembly
+        and senate in 2018, but ultimately vetoed. This bill was referred to
+        labor on January 3, 2024.
+      </div>
+    </div>
   </div>
 </template>
 
@@ -119,6 +204,10 @@
   .map-image {
     width: 100%;
     height: fit-content;
+  }
+
+  .mobile-view {
+    display: none;
   }
 
   .california {
@@ -176,12 +265,15 @@
   .tooltip {
     display: none;
     transform: translateX(-50%);
+    border-radius: 4px;
+    border: 1px solid #333;
     background-color: #333;
     color: #fff;
     padding: 5px;
+    font-size: 1rem;
     z-index: 1;
-    width: 400px;
-    height: fit-content;
+    width: 200px;
+    height: auto;
     position: absolute;
     transform: rotate(-44deg);
     a {
@@ -267,6 +359,36 @@
     .map-image {
       width: 100%;
       height: auto;
+    }
+    .tooltip {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .map {
+      button {
+        display: none;
+      }
+    }
+    .mobile-view {
+      display: block;
+      font-size: 0.8rem;
+      margin: 0px 24px;
+      border: 4px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      div {
+        margin: 8px 0px;
+        padding: 8px;
+      }
+    }
+    .map-image {
+      display: none;
     }
   }
 </style>
