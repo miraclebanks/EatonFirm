@@ -47,12 +47,28 @@
     align-items: center;
     justify-content: center;
     margin-top: 48px;
-    padding: 0px 24px;
     height: fit-content;
-
+    padding: 0px 24px;
     &_image {
       flex: 1;
-      border: 4mm ridge rgba(68, 34, 7, 0.6);
+      border-image-source: url("https://raw.githubusercontent.com/robole/artifice/main/framed-content/img/frame.png");
+      border-image-slice: 93 92 87 92;
+      border-image-repeat: stretch;
+
+      border-style: inset;
+      border-width: 60px;
+
+      display: grid;
+      row-gap: 2rem;
+
+      background-color: #ffe;
+      margin: 0 auto;
+      padding: 0.5rem;
+
+      resize: both;
+      overflow: auto;
+
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3), 0 0 6px 0 rgba(0, 0, 0, 0.18);
       height: fit-content;
       img {
         width: 100%;

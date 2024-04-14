@@ -72,7 +72,6 @@
     &_text {
       display: flex;
       flex-direction: column;
-      padding: 0px 96px;
       font-weight: bolder;
       &-blurb {
         display: flex;
@@ -96,7 +95,7 @@
     }
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .about-blurb-container {
       padding: 0px 24px;
       &_text {
