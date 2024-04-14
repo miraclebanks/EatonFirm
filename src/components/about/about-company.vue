@@ -48,11 +48,15 @@
     justify-content: center;
     margin-top: 48px;
     padding: 0px 24px;
+    height: fit-content;
+
     &_image {
       flex: 1;
+      border: 4mm ridge rgba(68, 34, 7, 0.6);
+      height: fit-content;
       img {
         width: 100%;
-        height: auto;
+        min-height: 100%;
       }
     }
     &_text {
