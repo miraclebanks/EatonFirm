@@ -246,8 +246,8 @@
     top: 30%;
     left: 85%;
     div {
-      top: 50%; /* Position the tooltip below the container */
-      left: -450%;
+      top: -100%; /* Position the tooltip below the container */
+      left: -850%;
     }
   }
   .ny {
@@ -261,6 +261,10 @@
   .vermont {
     top: 26%;
     left: 84%;
+    div {
+      top: 100%; /* Position the tooltip below the container */
+      left: 300%;
+    }
   }
   .tooltip {
     display: none;
@@ -302,7 +306,8 @@
     border: 1px solid #10630e;
     position: relative;
   }
-  .pending {
+  .ny,
+  .vermont {
     background: #aa3300;
     border: 1px solid #881100;
   }
@@ -363,7 +368,6 @@
     .tooltip {
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
     }
   }
 
