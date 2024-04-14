@@ -34,7 +34,7 @@
         the culture and attitudes around it need to shift. This website is one
         small piece to try and achieve that goal. As you go through your grief
         journey I hope this website gives you tools and resources needed to help
-        make the transition to “your new normal” a little easier. .
+        make the transition to “your new normal” a little easier.
       </p>
     </div>
   </div>
@@ -46,7 +46,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 96px;
+    margin-top: 48px;
     border: 1px solid grey;
     &_image {
       img {
@@ -54,7 +54,6 @@
       }
     }
     &_text {
-      padding: 0px 96px;
       font-size: 18px;
       font-weight: bolder;
     }
